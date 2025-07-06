@@ -32,11 +32,13 @@ The Screen shown :-
 ![Untitled](https://github.com/user-attachments/assets/54c2acc6-9902-4593-9266-511745bd9ae9)
 
 
-![Capterfure](https://github.com/user-attachments/assets/46beb35d-4fa5-4733-8fde-4f1b6c867b36)
+
+
+![Captusdre](https://github.com/user-attachments/assets/2b886b80-8218-4e66-9288-2a87b17b5a38)
 
 
 
 
-![Casdpture](https://github.com/user-attachments/assets/c86f7d78-5284-4330-a5a2-8ad801c9e00b)
+![Caspture](https://github.com/user-attachments/assets/7c6db7d5-4a42-4a78-b486-2e2281119ea2)
 
 
