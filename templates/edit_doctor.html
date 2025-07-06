@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Edit Doctor</h2>
+<form method="POST">
+  <div class="form-group">
+    <label>Name:</label>
+    <input type="text" name="name" class="form-control" value="{{ doctor.name }}" required>
+  </div>
+
+  <div class="form-group">
+    <label>Specialization:</label>
+    <input type="text" name="specialization" class="form-control" value="{{ doctor.specialization }}" required>
+  </div>
+
+  <div class="form-group">
+    <label>Contact:</label>
+    <input type="text" name="contact" class="form-control" value="{{ doctor.contact }}" required>
+  </div>
+
+  <button type="submit" class="btn btn-success">Update Doctor</button>
+  <a href="{{ url_for('index') }}" class="btn btn-secondary ml-2">Cancel</a>
+</form>
+
+{% endblock %}

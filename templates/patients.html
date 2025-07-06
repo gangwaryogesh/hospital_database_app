@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Patients</h3>
+<form method="POST" action="/add_patient" class="row g-2">
+  <div class="col-md-3"><input name="name" class="form-control" placeholder="Name"></div>
+  <div class="col-md-2"><input name="age" class="form-control" placeholder="Age" type="number"></div>
+  <div class="col-md-2"><input name="gender" class="form-control" placeholder="Gender"></div>
+  <div class="col-md-3"><input name="disease" class="form-control" placeholder="Disease"></div>
+  <div class="col-md-2"><button class="btn btn-success">Add</button></div>
+</form>
+
+<table class="table table-bordered table-striped mt-4">
+  <thead><tr><th>Name</th><th>Age</th><th>Gender</th><th>Disease</th><th>Action</th></tr></thead>
+  <tbody>
+    {% for p in patients %}
+    <tr>
+      <td>{{ p.name }}</td>
+      <td>{{ p.age }}</td>
+      <td>{{ p.gender }}</td>
+      <td>{{ p.disease }}</td>
+      <td><a href="/delete_patient/{{ p.id }}" class="btn btn-danger btn-sm">Delete</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
